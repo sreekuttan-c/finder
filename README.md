@@ -1,3 +1,23 @@
-# Finder
+# AdForge AI
 
-<p>Finder is an website that compare prices of an produt and suggest the best deal and redirect to that website hello </p>
+AI-powered short video ad generator that helps create engaging advertisements quickly and easily.
+
+## Features
+
+* AI-generated video ads
+* Ready-to-use templates
+* Simple and modern UI
+* Fast ad creation
+* Responsive design
+
+## Tech Stack
+
+* React
+* Tailwind CSS
+* React Router
+* Lucide React
+* AI APIs
+
+## Status
+
+🚧 Currently under development.
