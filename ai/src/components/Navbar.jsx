@@ -77,21 +77,14 @@ function Navbar() {
 
         </div>
 
-        {/* Desktop actions */}
-        <div className="hidden md:flex items-center gap-3">
+        {/* Desktop Login */}
+        <div className="hidden md:flex items-center">
 
           <NavLink
             to="/login"
-            className="text-sm font-medium text-stone-600 hover:text-stone-900 px-3 py-2 transition-colors"
+            className="group flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-sm font-medium px-4 py-2 rounded-md transition-colors"
           >
             Login
-          </NavLink>
-
-          <NavLink
-            to="/create"
-            className="group relative flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-sm font-medium pl-4 pr-3 py-2 rounded-md transition-colors"
-          >
-            Create
 
             <Flame
               className="w-3.5 h-3.5 text-stone-500 group-hover:text-orange-500 transition-colors duration-300"
@@ -140,20 +133,13 @@ function Navbar() {
           </NavLink>
         ))}
 
+        {/* Mobile Login */}
         <NavLink
           to="/login"
           onClick={() => setMenuOpen(false)}
-          className="text-sm font-medium text-stone-700 hover:text-stone-900 py-2.5"
+          className="mt-2 flex items-center justify-center gap-2 bg-stone-900 text-white text-sm font-medium py-2.5 rounded-md"
         >
           Login
-        </NavLink>
-
-        <NavLink
-          to="/create"
-          onClick={() => setMenuOpen(false)}
-          className="mt-1 flex items-center justify-center gap-2 bg-stone-900 text-white text-sm font-medium py-2.5 rounded-md"
-        >
-          Create
 
           <Flame
             className="w-3.5 h-3.5 text-orange-500"
