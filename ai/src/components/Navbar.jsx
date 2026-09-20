@@ -5,12 +5,12 @@ import { Flame, Menu, X } from "lucide-react";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const navLinks = [
-    { label: "Features", to: "/features" },
-    { label: "How it Works", to: "/how-it-works" },
-    { label: "Templates", to: "/templates" },
-  ];
-
+ const navLinks = [
+  { label: "Home", to: "/" },
+  { label: "Features", to: "/features" },
+  { label: "How it Works", to: "/how-it-works" },
+  { label: "Templates", to: "/templates" },
+];
   const linkClass = ({ isActive }) =>
     `relative overflow-hidden h-5 block text-sm group ${
       isActive ? "text-stone-900" : "text-stone-600"
