@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import Hero from "../components/Hero";
 import HowItWorks from "./HowItWorks";
 import Features from "./Features";
+import Testimonials from "./Testimonials";
+import Footer from "../components/Footer";
 
 function useReveal(threshold = 0.2) {
   const ref = useRef(null);
@@ -190,12 +192,16 @@ const Home = () => {
       </section>
 
 
-      {/* ================= HOW IT WORKS ================= */}
+       {/* ================= HOW IT WORKS ================= */}
       <HowItWorks />
-
 
       {/* ================= FEATURES ================= */}
       <Features />
+
+      {/* ================= TESTIMONIALS ================= */}
+      <Testimonials />
+      {/*=============FOOTER=========== */}
+      <Footer/>
 
     </div>
   );
